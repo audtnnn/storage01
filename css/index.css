@@ -108,11 +108,21 @@ img {
 #section .slide .text h2 {
     font-size: 100px;
     text-shadow: 4px 1px black;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+}
+#section .slick-current.slick-active .slide .text h2 {
+    animation: fadeInUp 1s 1 both 0.5s;
 }
 #section .slide .text p {
     font-size: 22px;
     font-weight: 200;
     margin: 15px 0 60px;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+}
+#section .slick-current.slick-active .slide .text p {
+    animation: fadeInUp 1s 1 both 0.5s;
 }
 #section .slide .text a {
     font-size: 17px;
@@ -120,9 +130,71 @@ img {
     background-color: white;
     padding: 12px 35px;
     border-radius: 50px;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+}
+#section .slick-current.slick-active .slide .text a {
+    animation: fadeInUp 1s 1 both 0.5s;
 }
 
-
+#section .slide_outer .slide_inner {
+    position: relative;
+  }
+  #section .slide_outer .slide_inner button.slick-arrow {
+    border: none;
+    background: none;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+  #section .slide_outer .slide_inner button.slick-next {
+    right: 50px;
+  }
+  #section .slide_outer .slide_inner button.slick-prev {
+    left: 50px;
+    z-index: 999;
+  }
+  #section .slide_outer .slide_inner ul.slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 50px;
+  }
+  #section .slide_outer .slide_inner ul.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  #section .slide_outer .slide_inner ul.slick-dots li button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-indent: 9999px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.2s;
+  }
+  #section .slide_outer .slide_inner ul.slick-dots li.slick-active button {
+    background: #f00;
+    width: 50px;
+    border-radius: 50px;
+  }
+  
+  /* 슬라이더 자동재생멈춤 버튼 */
+  #section .slide_outer {
+    position: relative;
+  }
+  #section .slide_outer .plapau {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 60px;
+  }
+  
 
 
 #section .business ul {
@@ -218,7 +290,7 @@ img {
 #section .customer {
     background-color: #edf0f4;
     padding: 50px 0;
-    margin: 0 ;
+    margin: 0 px;
     text-align: center;
 }
 #section .customer .row {
