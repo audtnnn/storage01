@@ -132,6 +132,7 @@ img {
     border-radius: 50px;
     opacity: 0;
     transform: translate3d(0, 100%, 0);
+    display: inline-block;
 }
 #section .slick-current.slick-active .slide .text a {
     animation: fadeInUp 1s 1 both 0.5s;
