@@ -97,6 +97,10 @@
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
+    #section .slide img {
+        width: auto;
+        min-height: 372px;
+    }
     #section .slide .text p {
         display: none;
     }
